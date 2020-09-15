@@ -1,4 +1,4 @@
-# TesteCD2
+# Athenas
 
 Pode acessar o banco que está especificado em core/db.php ele foi criado para este fim específico.
 
