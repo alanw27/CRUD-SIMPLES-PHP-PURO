@@ -29,13 +29,14 @@
                                 <tr role ="row">
                                     <th>Código</th>
                                     <th>Pessoa</th>
+                                    <th>Email</th>
                                     <th>Categoria</th>
                                     <th style="width: 200px;">Opções</th>
                                 </tr>
                             </thead>
                             <tbody> 
                                 <?php
-                                    $sql = "SELECT p.id, p.token, p.nome, c.descricao 
+                                    $sql = "SELECT p.id, p.token, p.nome, c.descricao, p.email
                                     FROM tb_pessoas p 
                                     JOIN tb_categorias c on c.id = p.fk_categoria ";
                                     $result = retorna_consulta($sql);
@@ -46,6 +47,7 @@
                                     <tr>
                                         <td><?php echo $key["id"]; ?></td>
                                         <td><?php echo $key["nome"]; ?></td>
+                                        <td><?php echo $key["email"]; ?></td>
                                         <td><?php echo $key["descricao"]; ?></td>
                                         <td>
                                             <a href="editar.php?id=<?php echo $key["token"]; ?>"  ><button id="btn_atualizar" name="btn_atualizar" type="button" class="btn btn-success" >Atualizar <i class="glyphicon glyphicon-refresh" ></i></button></a>
