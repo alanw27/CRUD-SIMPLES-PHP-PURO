@@ -1,9 +1,7 @@
 # TesteCD2
 
-Acessar página inicial na url: http://thisystem.com/TesteCD2 onde exibe CEP's cadastrados.
+Pode acessar o banco que está especificado em core/db.php ele foi criado para este fim específico.
 
-Clicar no menu Cadastro para cadastrar um novo CEP.
+Na raiz também se encontra o dump do banco para que ele possa ser gerado localmente por script se preferir, em seguida clonar a pasta athenas para dentro da pasta www do wamp ou xamp para rodar local.
 
-Digitar CEP, e ao sair do campo ele trará o endereço do CEP digitado.
-
-Se o CEP existir na base, ele trará o CEP cadastrado lá. Caso contrário, ele trará da API e você poderá salvar na base.
+Também está publicado na url a seguir http://thisystem.com/athenas/ para facilitar os testes.
